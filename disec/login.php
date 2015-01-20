@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IIT KGP MUN 2014</title>
+    <title>IIT KGP MUN 2015</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
     		
 	    	<div class="panel panel-info">
 	        	<div class="panel-heading text-center">
-	            <h2>DISEC</h2>
+	            <h2>UNHCR</h2>
 	            </div>
 	            <div class="panel-body">
 	            <form role="login" method="get">
