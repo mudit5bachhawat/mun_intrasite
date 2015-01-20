@@ -1,0 +1,43 @@
+.carousel-indicators li
+{
+	
+display: inline-block;
+width: 10px;
+height: 10px;
+margin: 1px;
+text-indent: -999px;
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0);
+border: 5px solid rgb(255, 245, 3);
+border-radius: 1px;
+}
+
+body,h1,h2,h3,h4,h5,h6,p
+{
+    font-family: 'Open Sans'
+}
+body {
+	/*background-color: rgb(238,238,238);*/
+    padding-top: 2px;
+}
+
+.bottom0
+{
+	padding-bottom: 0px;
+	margin-bottom:0px;
+}
+.top0
+{
+	padding-top: 0px;
+	margin-top:0px;
+}
+
+.text20
+{
+	font-size: 20px;
+}
+
+.no-hover:hover
+{
+	text-decoration:none;
+}

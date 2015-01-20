@@ -1,0 +1,370 @@
+<html>
+<head>
+	<title>Registration | GES 2015</title>
+	<base href="../"></base>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+	.text-danger,.error{
+		color: #f04124!important
+	}
+	</style>
+</head>
+<body>
+	<br><br>
+	<div class="col-md-offset-3 col-md-6"> 
+		<img class="pull-right" src="assets/img/gesLogoBlack.png" style="height: 75px;margin-top: 25px;"/>
+		<h3>Global Entrepreneurship Summit 2015</h3>
+		<h4>Registration</h4>
+		<a  onclick="javascript:$('#myModal2').modal('show')"><p>Click here to know the Process of Registration</p></a>
+		<div class="clearfix"> </div>
+		<hr style="border-top: 2px solid;">
+		<form id="frmReg" enctype="multipart/form-data">
+	        <div class="form-group">
+	        	<label class="control-label" for="name" style="">Name<span class="text-danger">*</span></label>
+	      		<div class="helper-text"></div>
+	      		<input class="form-control" type="text" id="name" placeholder="Full Name" >   
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label" style="margin-bottom: 10px;">Gender<span class="text-danger">*</span></label>
+	        	<br>
+	        	<input id="male" type="radio" name="gender" value="male"/>
+	        	<label for="male" class="control-label" style="margin-bottom: 0px;">Male</label><br>
+	        	<input id="female" type="radio" name="gender" value="female"/>
+	        	<label for="female" class="control-label">Female</label>
+	        	<p class="help-block text-danger"></p>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label">Designation<span class="text-danger">*</span></label>
+	        	<br>
+	      		<select class="form-control" id="designation">
+	      			<option>Student</option>
+	      			<option>Faculty</option>
+	      			<option>Startup Camp</option>
+	      		</select>
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label">City<span class="text-danger">*</span></label>
+	        	<br>
+	      		<select class="form-control" id="city">
+	      			<option>Select City</option>
+	      			<option>Kharagpur</option>
+	      			<option>Kolkata</option>
+	      			<option>Vijayawada</option>
+	      		</select>
+	      		<p class="help-block  text-danger"></p>
+	        </div>
+	        <div class="form-group">
+	        	<label class="control-label">College<span class="text-danger">*</span></label>
+	        	<br>
+	      		<select id="college" class="form-control " disabled>
+	      			<option></option>
+	      		</select>
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <div class="form-group">
+	        	<label class="faculty" class="control-label">Couldn't find your college?&nbsp;&nbsp;<a href="register/reqInv.php" class="btn btn-primary btn-xs">Request Invite</a></label>
+	        	<br>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label" for="mobile" style="">Mobile<span class="text-danger">*</span></label>
+	      		<div class="helper-text"></div>
+	      		<input class="form-control" type="text" id="mobile" name="mobile" placeholder="10 Digits Mobile Number" maxlength="10" minlength="10" digits="true">   
+	      		<p class="help-block text-danger"></p>
+
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label" for="email" style="">Email<span class="text-danger">*</span></label>
+	      		<div class="helper-text"></div>
+	      		<input class="form-control" type="email" id="email" placeholder="abc@example.com" >   
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label" for="password" style="">Password<span class="text-danger">*</span></label>
+	      		<div class="helper-text"></div>
+	      		<input class="form-control" type="password" id="password" name="password" minlength="6"  placeholder="Password">   
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <div class="form-group">
+	        	<label class="control-label" for="password2" style="">Re-enter Password<span class="text-danger">*</span></label>
+	      		<div class="helper-text"></div>
+	      		<input class="form-control" type="password" id="password2" name="password2" equalTo="#password"  placeholder="Re-enter password">   
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<label class="control-label" for="resume" style="">Resume<span class="text-danger">*</span></label>
+	      		<div class="helper-text"></div>
+	      		<input class="form-control" type="file" id="resume"  placeholder="resume">   
+	      		<p class="help-block text-danger"></p>
+	        </div>
+	        <hr>
+	        <div class="form-group">
+	        	<input type="checkbox" id="tc"> 
+	        	<label class="control-label" for="tc" style="">By clicking on submit you agree <a onclick="javascript:$('#myModal').modal('show')">terms and conditions</a></label>
+
+				<div id="myModal" class="modal fade">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				        <h4 class="modal-title">Terms and Conditions</h4>
+				      </div>
+				      <div class="modal-body">
+				        <ol>
+				        	<li>Payment is non-refundable, under any circumstances whatsoever.</li>
+				        	<li>Tshirt of specified size will be provided only on availability (till stocks last).</li>
+				        	<li>Accommodation inside campus is mandatory. Paraphernalia required will be provided on arrival.</li>
+				        	<li>Any person found flouting institute rlies will be subject to disciplinary proceedings and as a consequence, the respective college may be disbarred from GES in the future.</li>
+				        	<li>Registration Fees have to be paid in complete, as given in the site. No concessions will be permitted except that on website.</li>
+				        	<li>Appliances and belongings are the sole responsibility of the participants. E-Cell, IIT Kharagpur is not responsible for any loss or damage caused.</li>
+
+				        </ol>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<div id="myModal2" class="modal fade">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				        <h4 class="modal-title">Process for Registration</h4>
+				      </div>
+				      <div class="modal-body">
+					        <ol>
+					        	<li>Initiate the process of registration by filling you personal details at: http://www.ges.ecell-iitkgp.org/register</li>
+					        	<li>In case your college is not on the list, then request an invite.</li>
+					        	<li>As soon as your data has been updated,you will get a link via email to verify.</li>
+					        	<li>Login to http://www.ges.ecell-iitkgp.org/login , then enter the details of the professor and upload the letter of recommendation, which will be verified by the Public Relations Team. This can only be done once and your entries will be locked thereafter. </li>
+					        	<li>Following this, enter the details of your arrival and departure in the adjacent window, PNR and size of T-Shirt.</li>
+					        	<li>6.	All these details can be edited upon logging into your account.</li>
+					        	<li>After verification, you can avail one of the three methods of payment : </li>
+					        	<li>a. Online Transfer : Can be done in two ways, either by making an NEFT or filling an NEFT form at a bank near you.<br>
+									b. Bank Transfer : Via any IDBI bank branch. Further details are provided on the site.<br>
+									c. Draft : A draft can be made and sent via courier.<br>
+								</li>
+					        	<li>A screenshot and photocopy of the form has to preserved for uploading on the registration link and reproduction at GES.</li>
+					        	<li>Once payment is verified, you will receive an email providing you with your GES ID. Then, proceed to select your events of interest in the next window (which will be updated in the first fortnight of January).</li>
+					        </ol>
+				        <br><br>
+				        <h4>Pricing</h4>
+					      <table class="table table-striped">
+					      	<thead><th></th><th>Early Bird(Registration before 31st December)</th><th>Registration in first week of January</th></thead>
+					      	<tr><td>Students</td><td>INR 1200/-</td><td>INR 1400/-</td></tr>
+					      	<tr><td>Startups</td><td>INR 2000/- for Team Representative and INR 1200/- for other team members/-</td><td>INR 2500/- for Team Representative and INR 1500/- for other team members</td></tr>
+					      	<tr><td>Professors</td><td>INR 1800/-</td><td>INR 2000/-</td></tr>
+					      	<tr><td>Empresario Semi-Finalists</td><td>INR 1500/-</td><td>INR 1500/-</td></tr>
+					      </table>
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+	      		<p class="help-block text-danger"></p>
+
+	        </div>
+	        <hr>
+	        <button id="submit" class="btn btn-primary">Submit</button>
+	        <input type="reset" class="btn btn-default" value="Reset"/>
+	        <a id="login" href="../login/" class="btn btn-primary">Already Registered ?</a>
+		</form>
+	</div>
+
+	<div class="clearfix"></div>
+	<hr style="margin-bottom: 12px;">
+	<p class="text-center">&copy; Entrepreneurship Cell</p>
+
+
+
+
+	<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+				jQuery.validator.setDefaults({
+				  debug: true,
+				  success: "valid"
+				});
+
+				formMain=$("#frmReg");
+				formMain.validate();
+
+	})
+	var college;
+	$("#designation").change(function(){
+		if ($("#designation").val()=="Startup Camp") {
+			$("#college").parent().hide();
+			$("#college").parent().next().hide();
+			$("#college").val("startup camp");
+		}
+		else{
+			$("#college").parent().show();
+			$("#college").parent().next().show();
+			$("#college").val("");
+		}
+	});
+		$("#name").focusout(function(){
+			if ($("#name").val().trim()=="") {
+				$(this).siblings("p").html("Enter name");
+			}			
+		});
+		$("#submit").click(function(e){
+			e.preventDefault();
+		    if (formMain.valid()==false) {
+		    	return;
+			}
+			name=$("#name").val().trim();
+			if (name==""){
+				$("#name").siblings("p").html("Enter name");
+				$(("#name")).focus();
+				$("#name").parent().addClass("text-danger");
+				return;
+			}
+
+			gender=$("[name='gender']:checked").val();
+			if (gender==undefined){
+				$("[name='gender']").siblings("p").html("Please select gender.");
+				$("[name='gender']").focus();
+				$("[name='gender']").parent().addClass("text-danger");
+				return;
+			}
+
+			designation=$("#designation").val();
+
+			city=$("#city").val();
+			if (city=="Select a City") {
+				$("#city").siblings("p").html("Please select a city.");
+				$("#city").focus();
+				$("#city").parent().addClass("text-danger");
+				return;
+			}
+			
+			college=$("#college").val();
+			if ((college=="Select a college") && $("#designation").val()!="Startup Camp"){
+				$("#college").siblings("p").html("Please select a college.");
+				$("#college").focus();
+				$("#college").parent().addClass("text-danger");
+				return;
+			}
+
+			mobile=$("#mobile").val();
+			if (mobile=="") {
+				$("#mobile").siblings("p").html("Please enter mobile number.");
+				$("#mobile").focus();
+				$("#mobile").parent().addClass("text-danger");
+				return;
+			}
+
+			email=$("#email").val();
+			if (email=="") {
+				$("#email").siblings("p").html("Please enter email.");
+				$("#email").focus();
+				$("#email").parent().addClass("text-danger");
+				return;
+			}
+
+			password=$("#password").val();
+			if (password=="") {
+				$("#password").siblings("p").html("Please enter password.");
+				$("#password").focus();
+				$("#password").parent().addClass("text-danger");
+				return;
+			}
+			
+			tc=$("#tc").is(":checked");
+			if (tc==false) {
+				$("#tc").siblings("p").html("Please select this to continue");
+				$("#tc").focus();
+				$("#tc").parent().addClass("text-danger");
+				return;
+			}
+
+			resume=$("#resume").val();
+			if (resume==false) {
+				$("#resume").siblings("p").html("Please upload your resume to continue");
+				$("#resume").focus();
+				$("#resume").parent().addClass("text-danger");
+				return;
+			}
+			var formData=new FormData();
+			resume=document.getElementById("resume").files[0];
+			
+			formData.append("name",name);
+			formData.append("gender",gender);
+			formData.append("designation",designation);
+			formData.append("city",city);
+			formData.append("college",college);
+			formData.append("mobile",mobile);
+			formData.append("email",email);
+			formData.append("password",password);
+			formData.append("resume",resume);
+
+			$("#submit").attr("disabled","disabled");
+			$("#submit").html("<span class='glyphicon glyphicon-refresh'></span> Uploading your data...");
+
+
+		    $.ajax({
+		        url: "register/register.php",
+		        type: 'POST',
+		        data: formData,
+		        async: true,
+		        success: function (data) {
+		        	if (data.trim()=="1") alert("Data recorded. Please check your email and confirm your email.");
+					else if (data.trim()=="-1") {
+						$("#email").siblings("p").html("This email is already registered.");
+						$("#email").focus();
+						$("#email").parent().addClass("text-danger");
+						$("#submit").removeAttr("disabled");
+						$("#submit").html("Submit");
+						return;
+					}
+					$("#submit").removeAttr("disabled");
+					window.location.reload();
+		        },
+		        error: function (data) {
+		        	alert("Error: "+data);
+		        },
+		        cache: false,
+		        contentType: false,
+		        processData: false
+		    });
+
+
+
+		});
+		$(document).ready(function(){
+			$("#city").load('register/getCities.php');
+		});
+		$("#city").change(function(){
+			$("#college").load('register/getColleges.php?city='+encodeURI($("#city").val()),function(data){
+				if (data.trim()=="") {
+					$("#college").attr("disabled","disabled");
+				}
+				else {
+					$("#college").removeAttr("disabled");
+				}
+					//$("#college").trigger("change");
+			});
+		})
+
+	</script>
+</body>
+</html>
